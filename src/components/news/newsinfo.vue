@@ -22,18 +22,25 @@
 				</li>
 			</ul>
 		<div class="content" v-html="infoList.content"></div>
+		<comment :id="id"></comment>
     </div>
 </template>
 
 <script>
 //引入公共js文件
 import common from "../../kits/common.js";
+
+//引入conment子组件
+import comment from "../../kits/comment.vue";
     export default{
         data(){
 			return {
 				id:0,
 				infoList:{}
 			}
+		},
+		components:{
+            comment
 		},
 		created(){
 			this.id = this.$route.params.id;

@@ -35,7 +35,6 @@ import common from "../../kits/common.js";
         },
         created(){
 			this.getNewsList()
-			console.log(this.list);
         },
         methods:{
 			getNewsList(){
@@ -71,10 +70,11 @@ import common from "../../kits/common.js";
 	}
 	.dateCom{
 		font-size:14px;
-		color:#007aff;
+		color:rgba(0,0,0,0.5);
 	}
 	.mui-table-view-cell p{
 		margin-bottom:10px;
+		color:#007aff
 	}
 	.mui-table-view-cell:after{
 		right:15px;
