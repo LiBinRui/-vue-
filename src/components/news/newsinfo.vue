@@ -26,6 +26,8 @@
 </template>
 
 <script>
+//引入公共js文件
+import common from "../../kits/common.js";
     export default{
         data(){
 			return {
@@ -39,7 +41,7 @@
 		},
 		methods:{
 			getNewsInfo(){
-				var url = "http://139.199.192.48:8888/api/getnew/"+this.id;
+				var url = common.apidomain+"/api/getnew/"+this.id;
 				this.$http.get(url).then(function(response) {
 					var infoData = response.body;
 					if(infoData.status != 0){

@@ -52,7 +52,8 @@
 </template>
 
 <script>
-
+//引入公共js文件
+import common from "../kits/common.js";
 
 	export default{
 		data(){
@@ -66,7 +67,7 @@
 		},
 		methods:{
 			getImgList(){
-				var url = "http://139.199.192.48:8888/api/getlunbo";
+				var url = common.apidomain + "/api/getlunbo";
 				this.$http.get(url).then(function(response){
 						if(response.body.status != 0){
 							alert(response.body.status);
@@ -128,5 +129,8 @@
 	}
 	.mui-icon-phone:before{
 		background-image:url("../../static/imgs/6.png");
+	}
+	.mui-icon .mui-badge{
+		font-size:10px;
 	}
 </style>
