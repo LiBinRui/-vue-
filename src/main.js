@@ -27,6 +27,8 @@ import cart from "./components/shopping/Cart.vue";
 import search from "./components/Search.vue";
 import newsList from "./components/news/newsList.vue";
 import newsInfo from "./components/news/newsinfo.vue";
+import  phoptscategory from "./components/category/photoscategory.vue";
+import photoinfo from "./components/category/photoinfo.vue"
 //格式化日期
 import moment from "moment";
 Vue.filter("datefmt",function(input,fmtstring){
@@ -42,7 +44,10 @@ var router = new VueRouter({
         {path:"/shopping/cart",component:cart},
         {path:"/search",component:search},
         {path:"/news/newsList",component:newsList},
-        {path:"/news/newsinfo/:id",component:newsInfo} 
+        {path:"/news/newsinfo/:id",component:newsInfo},
+        {path:"/category/photoscategory",component:phoptscategory},
+        {path:"/category/photoinfo",component:photoinfo}
+
     ]
 })
 
