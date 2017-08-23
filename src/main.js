@@ -46,7 +46,7 @@ var router = new VueRouter({
         {path:"/news/newsList",component:newsList},
         {path:"/news/newsinfo/:id",component:newsInfo},
         {path:"/category/photoscategory",component:phoptscategory},
-        {path:"/category/photoinfo",component:photoinfo}
+        {path:"/category/photoinfo/:id",component:photoinfo}
 
     ]
 })

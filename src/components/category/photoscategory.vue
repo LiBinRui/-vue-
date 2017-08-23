@@ -9,7 +9,7 @@
         <div class="categoryinfo">
             <ul>
                 <li v-for="item in photosList">
-                    <router-link to="/category/photoinfo">
+                    <router-link v-bind="{to:'/category/photoinfo/'+item.id}">
                         <img src="../../../static/imgs/timg.jpg">
                     </router-link>
                     <div class="desc">
@@ -28,7 +28,7 @@
             return {
                 titleList :[],
                 ulWidth:"",
-                photosList:[]
+                photosList:[],
             }
         },
         created(){
