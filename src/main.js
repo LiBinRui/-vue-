@@ -17,7 +17,9 @@ import "../static/mint_ui/css/style.css";
 //引入ajax
 import VueResource from "vue-resource";
 Vue.use(VueResource);
-
+//引入vue preview
+import VuePreview from 'vue-preview';
+Vue.use(VuePreview)
 //引入 mui
 import "../static/miui/css/mui.css";
 //引入需要的组件
